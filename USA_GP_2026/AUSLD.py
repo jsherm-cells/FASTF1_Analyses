@@ -68,20 +68,6 @@ dots.update_traces(jitter=0.6, marker_size=5)
 violin.add_traces(dots.data)
 violin.update_layout(boxmode='overlay', legend_title_text='Compound')
 
-rows = []
-for driver in top_5:
-    driver_laps = race.laps.pick_drivers(driver).pick_quicklaps()
-    
-    for _, lap in driver_laps.iterlaps():
-        rows.append({
-            'Driver': driver,
-            'LapNumber': lap['LapNumber'],
-            'AvgSpeed': lap.get_car_data()['Speed'].mean()
-        })
-
-speeddf = pd.DataFrame(rows)
-
-lapsdf = lapsdf.merge(speeddf, on=['Driver', 'LapNumber'], how='left')
 
 position = []
 for driver in top_5:
