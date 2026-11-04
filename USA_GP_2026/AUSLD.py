@@ -83,18 +83,36 @@ speeddf = pd.DataFrame(rows)
 
 lapsdf = lapsdf.merge(speeddf, on=['Driver', 'LapNumber'], how='left')
 
-# change this to the positions graph for analysis
-heat_data = lapsdf.pivot(index='Driver', columns='LapNumber', values='AvgSpeed')
-heat_data = heat_data.reindex(top_5)
+position = []
+for driver in top_5:
+    driver_pos = race.laps.pick_drivers(driver).pick_quicklaps()
 
-heatspeed = px.imshow(
-    heat_data,
-    aspect='auto',
-    color_continuous_scale='RdYlGn',
-    template='plotly_dark',
-    title='Average Speeds by Top 5 in the Race',
-    labels={'x': 'Lap #', 'y': 'Driver', 'color': 'Avg Speed'}
+    for _, pos in driver_pos.iterlaps():
+        position.append({
+        'Driver': driver,
+        'LapNumber': pos['LapNumber'],
+        'Position': pos['Position']
+    })
+
+posdf = pd.DataFrame(position)
+lapsdf = lapsdf.merge(posdf, on=['Driver', 'LapNumber'], how='left')
+
+dash_map = {'HAM': 'dot'}
+
+RacePosition = px.line(
+    lapsdf,
+    x='LapNumber',
+    y='Position',
+    color='Driver',
+    line_dash='Driver',
+    line_dash_map=dash_map,
+    color_discrete_map=driver_colors,
+    title='Position Changes',
+    labels={'LapNumber': 'Lap', 'Position': 'Position'},
+    template='plotly_dark'
 )
+RacePosition.update_yaxes(autorange='reversed')
+
 
 stints = (
     pd.DataFrame(race.laps.pick_drivers(top_5))
