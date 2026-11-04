@@ -1,0 +1,19 @@
+# FastF1 data cache
+f1_cache/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Private settings
+.env
+.streamlit/secrets.toml
+
+# System files
+.DS_Store
+Thumbs.db
