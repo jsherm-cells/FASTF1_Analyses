@@ -135,6 +135,6 @@ with col2:
     st.plotly_chart(violin, width='stretch')
 col3,col4 = st.columns([5,5])
 with col3:
-    st.plotly_chart(heatspeed, width='stretch')
+    st.plotly_chart(RacePosition, width='stretch')
 with col4:
     st.plotly_chart(strat, width='stretch')
