@@ -14,7 +14,7 @@ Personal project I am pursuing to increase my knowledge of python and data analy
 git clone https://github.com/jsherm-cells/FASTF1_Analyses
 cd FASTF1_Analyses
 pip install -r requirements.txt
-streamlit run USA_GP_2026/AUSLD.py
+streamlit run [gp_folder]/[app].py
 ```
 
 ## Built with
