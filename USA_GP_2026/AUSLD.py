@@ -83,6 +83,7 @@ speeddf = pd.DataFrame(rows)
 
 lapsdf = lapsdf.merge(speeddf, on=['Driver', 'LapNumber'], how='left')
 
+# change this to the positions graph for analysis
 heat_data = lapsdf.pivot(index='Driver', columns='LapNumber', values='AvgSpeed')
 heat_data = heat_data.reindex(top_5)
 
