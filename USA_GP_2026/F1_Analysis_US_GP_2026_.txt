@@ -11,7 +11,7 @@ Context:
 
 Tyre of Choice:
 
-    The hard was the way to go at this year at COTA. LEC clocked the fastest lap with a 1:37.976 on lap 42 using this hard tyre. Looking at our “Lap Time Distribution on Tyre Compound” visual, we can see this tyre choice reflected. Four of our top five ran the hard tyre during the race, and it consistently put in fastest laps they had. This visual also gives us insight to the pace of the teams throughout the race. Ferrari was the quickest car, however, they were inconsistent. The other teams running hards, Mercedes and McLaren, also used the hard tyre on their fastest laps, but were much more consistent. The most baffling piece of this visual, is VER. We can see that he did not use the hard tyre at all throughout the race and was still able to score a podium!
+    The hard was the way to go this year at COTA. LEC clocked the fastest lap with a 1:37.976 on lap 42 using this hard tyre. Looking at our “Lap Time Distribution on Tyre Compound” visual, we can see this tyre choice reflected. Four of our top five ran the hard tyre during the race, and it consistently put in fastest laps they had. This visual also gives us insight to the pace of the teams throughout the race. Ferrari was the quickest car, however, they were inconsistent. The other teams running hards, Mercedes and McLaren, also used the hard tyre on their fastest laps, but were much more consistent. The most baffling piece of this visual, is VER. We can see that he did not use the hard tyre at all throughout the race and was still able to score a podium!
 
 What happened to Ferrari?
 
