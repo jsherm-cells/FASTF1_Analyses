@@ -7,6 +7,7 @@ Personal project I am pursuing to increase my knowledge of python and data analy
 | Analysis | Question | Dashboard |
 |---|---|---|
 | [USA Grand Prix Analysis](USA_GP_2026/) | What performance factors separated the top 5 finishers? | Coming Soon |
+| [Mexico Gran Prix Battle Analysis](MEXICO26_FERRARI_BATTLE/) | Who deserved to win this battle? Was it worth it or did it ruin the Ferrari's race? | Coming Soon |
 
 ## Run it locally
 
