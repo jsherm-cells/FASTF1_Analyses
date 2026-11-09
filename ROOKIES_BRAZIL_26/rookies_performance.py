@@ -66,9 +66,9 @@ long = px.line(
 )
 
 st.set_page_config(layout='wide')
-st.title('Rookie Performance vs Top Performer: FP1 Brasil')
+st.title('Rookie Performance vs Top Performer: FP1 Brazil')
 st.header('By: Jake Sherman')
-st.write('How the rookie(s) held up against the top performer at FP1 in Brasil')
+st.write('How the rookie(s) held up against the top performer at FP1 in Brazil')
 
 st.plotly_chart(violin, use_container_width=True)
 st.plotly_chart(long, use_container_width=True)
