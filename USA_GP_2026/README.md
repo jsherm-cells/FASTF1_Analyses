@@ -14,15 +14,23 @@ At this year’s USA GP, we saw Kimi Antonelli, on the break of clinching his fi
 
 The hard tyre was the way to go this year at COTA. LEC clocked the fastest lap with a 1:37.976 on lap 42 using this hard tyre. Looking at our “Lap Time Distribution on Tyre Compound” visual, we can see this tyre choice reflected. Four of our top five ran the hard tyre during the race, and it consistently put in fastest laps they had. This visual also gives us insight to the pace of the teams throughout the race. Ferrari was the quickest car, however, they were inconsistent. The other teams running hards, Mercedes and McLaren, also used the hard tyre on their fastest laps, but were much more consistent. The most baffling piece of this visual, is VER. We can see that he did not use the hard tyre at all throughout the race and was still able to score a podium!
 
+![Lap Time Distribution on Tyre Compound](Visuals/lap-time-distrobution-on-tyre-compound.png)
+
 ## What happened to Ferrari?
 
 As we mentioned before, Ferrari clearly was the fastest team on the tyre of choice this weekend. But when we look at the overall strategy, we can see why this may have stopped them from securing a win. They both started on the soft tyre (grippiest, but susceptible to degradation). While the soft did give them a great start and the ability to fight for positions early, it lasted for only about 15-20 laps. This caused the two (along with others) to pit early. The prancing horses were able to claw their way back up to fight for the podium positions. At the end of the race, VER mediums started to fail him and he was caught by LEC on his lighting-fast hards for P2. HAM was looking like he was in great position to secure P3. Looking at “Lap Times Across Race: Top 5 Finishers”, we can see just how much faster HAM was than VER. However, a safety car on lap 51 ended the pursuit.
+
+![Lap Times Across Race: Top 5 Finishers](Visuals/lap-times-across-race-top-5-finishers.png)
 
 ## Strategy Analysis
 
 For this section, all details will be referring to the “Strategies” visual. Strategists were calling for a two stop this weekend. The soft look is quick and relatively durable, shifting focus away from the longer-lasting hard tyre. However, we saw quite the opposite.
 
+![Strategies](Visuals/strategies.png)
+
 Our winner, ANT, went for the one-stop and it paid off("Position Changes"). Everyone else in the top five started on softs, besides NOR who started on mediums as well. What was the key for ANT strategy? His lap times were as fast as those on softs around him (“Lap Time Distribution on Tyre Compound”), but he was able to keep that tyre on for much longer, building a gap and fresh air for a pit stop to hards. Now on the fastest hard tyre, he was able to quickly catch up and overtake LEC for P1.
+
+![Position Changes](Visuals/position-changes.png)
 
 The Ferraris (disappointment in their strategy analysis may be consistent through these installments) went for the expected strategy. The two-stop still worked very well. What would have secured them a 2-3 was ruined by the safety car at the most critical moment.
 
