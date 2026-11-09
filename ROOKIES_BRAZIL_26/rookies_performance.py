@@ -11,7 +11,7 @@ fastf1.plotting.setup_mpl(color_scheme='fastf1')
 driver_colors = fastf1.plotting.get_driver_color_mapping(session=prac)
 compound_color = fastf1.plotting.get_driver_color_mapping(session=prac)
 
-rookiesNOR = prac.laps.pick_drivers(['NOR', 'SLA', 'BEG', 'CAM', 'BRO', 'MIN'])
+rookiesNOR = prac.laps.pick_drivers(['NOR', 'SLA', 'BEG', 'CAM', 'BRO', 'MIN', 'HER', 'FOR'])
 rookiesNOR['LapTimeSeconds'] = rookiesNOR['LapTime'].dt.total_seconds()
 rookiesNOR.dropna(subset=['LapTimeSeconds'])
 
@@ -42,7 +42,7 @@ dots.update_traces(jitter=0.6, marker_size=5)
 violin.add_traces(dots.data)
 violin.update_layout(boxmode='overlay', legend_title_text='Compound')
 
-drivers = ['NOR', 'BEG', 'BRO', 'CAM', 'MIN', 'SLA']
+drivers = ['NOR', 'BEG', 'BRO', 'CAM', 'MIN', 'SLA', 'HER', 'FOR']
 
 laps = prac.laps.pick_drivers(drivers).pick_wo_box().copy()
 laps['LapTimeSec'] = laps['LapTime'].dt.total_seconds()
