@@ -22,7 +22,7 @@ As we mentioned before, Ferrari clearly was the fastest team on the tyre of choi
 
 For this section, all details will be referring to the “Strategies” visual. Strategists were calling for a two stop this weekend. The soft look is quick and relatively durable, shifting focus away from the longer-lasting hard tyre. However, we saw quite the opposite.
 
-Our winner, ANT, went for the one-stop and it paid off. Everyone else in the top five started on softs, besides NOR who started on mediums as well. What was the key for ANT strategy? His lap times were as fast as those on softs around him (“Lap Time Distribution on Tyre Compound”), but he was able to keep that tyre on for much longer, building a gap and fresh air for a pit stop to hards. Now on the fastest hard tyre, he was able to quickly catch up and overtake LEC for P1.
+Our winner, ANT, went for the one-stop and it paid off("Position Changes"). Everyone else in the top five started on softs, besides NOR who started on mediums as well. What was the key for ANT strategy? His lap times were as fast as those on softs around him (“Lap Time Distribution on Tyre Compound”), but he was able to keep that tyre on for much longer, building a gap and fresh air for a pit stop to hards. Now on the fastest hard tyre, he was able to quickly catch up and overtake LEC for P1.
 
 The Ferraris (disappointment in their strategy analysis may be consistent through these installments) went for the expected strategy. The two-stop still worked very well. What would have secured them a 2-3 was ruined by the safety car at the most critical moment.
 
