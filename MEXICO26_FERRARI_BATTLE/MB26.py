@@ -127,7 +127,7 @@ gear.update_layout(hovermode='x unified')
 st.set_page_config(layout='wide')
 st.title('Ferrari First Lap Battle Analysis')
 st.header('By: Jake Sherman')
-st.write('An analysis of a pivotal and contreversial battle for Charles Leclerc and the Scuderia')
+st.write('An analysis of a pivotal and contreversial battle for The Scuderia')
 
 st.plotly_chart(speed, use_container_width=True)
 st.plotly_chart(throttle, use_container_width=True)
