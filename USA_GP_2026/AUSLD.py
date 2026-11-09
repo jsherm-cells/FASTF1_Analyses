@@ -47,7 +47,7 @@ violin = px.violin(
     color_discrete_map=driver_colors,
     points=False,
     violinmode='overlay',
-    title='Lap Time Distrobution on Tyre Compound',
+    title='Lap Time Distribution on Tyre Compound',
     labels={'LapTimeSeconds': 'Lap Time (s)', 'Driver': 'Driver'},
     template='plotly_dark'
 )
