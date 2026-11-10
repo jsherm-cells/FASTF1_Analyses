@@ -11,7 +11,10 @@ race.load()
 
 fastf1.plotting.setup_mpl(color_scheme='fastf1')
 
-driver_colors = fastf1.plotting.get_driver_color_mapping(session=race)
+driver_colors = {
+    row['Abbreviation']: f"#{row['TeamColor']}" if row['TeamColor'] else '#888888'
+    for _, row in race.results.iterrows()
+}
 compound_colors = fastf1.plotting.get_compound_mapping(session=race)
 
 top_5 = race.results.sort_values('Position').head(5)['Abbreviation'].tolist()
