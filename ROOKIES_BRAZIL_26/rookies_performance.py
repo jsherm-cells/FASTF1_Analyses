@@ -9,7 +9,7 @@ prac.load()
 
 fastf1.plotting.setup_mpl(color_scheme='fastf1')
 driver_colors = fastf1.plotting.get_driver_color_mapping(session=prac)
-compound_color = fastf1.plotting.get_driver_color_mapping(session=prac)
+compound_color = fastf1.plotting.get_compound_mapping(session=prac)
 
 rookiesNOR = prac.laps.pick_drivers(['NOR', 'SLA', 'BEG', 'CAM', 'BRO', 'MIN', 'HER', 'FOR'])
 rookiesNOR['LapTimeSeconds'] = rookiesNOR['LapTime'].dt.total_seconds()
@@ -23,7 +23,7 @@ violin = px.violin(
     color_discrete_map=driver_colors,
     points=False,
     violinmode='overlay',
-    title = 'Lap Distrobution on Tyre Compound',
+    title = 'Lap Distribution on Tyre Compound',
     labels = {'LapTimeSeconds' : 'Lap Time (s)', 'Driver' : 'Driver'},
     template = 'plotly_dark'
 )
