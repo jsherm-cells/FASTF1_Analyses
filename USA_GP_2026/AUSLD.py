@@ -3,11 +3,13 @@ import plotly.express as px
 import fastf1
 import fastf1.plotting
 import streamlit as st
-fastf1.plotting.setup_mpl(color_scheme='fastf1')
+
 
 
 race = fastf1.get_session(2026, 'United States Grand Prix', 'R')
 race.load()
+
+fastf1.plotting.setup_mpl(color_scheme='fastf1')
 
 driver_colors = fastf1.plotting.get_driver_color_mapping(session=race)
 compound_colors = fastf1.plotting.get_compound_mapping(session=race)
