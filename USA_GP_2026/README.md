@@ -24,9 +24,10 @@ As we mentioned before, Ferrari clearly was the fastest team on the tyre of choi
 
 ## Strategy Analysis
 
-![Strategies](Visuals/strategies.png)
+![Strategies](Visuals/strategies.png) ![Position Changes](Visuals/position-changes.png)
 
-![Position Changes](Visuals/position-changes.png)
+
+
 
 For this section, all details will be referring to the “Strategies” visual. Strategists were calling for a two stop this weekend. The soft look is quick and relatively durable, shifting focus away from the longer-lasting hard tyre. However, we saw quite the opposite.
 
