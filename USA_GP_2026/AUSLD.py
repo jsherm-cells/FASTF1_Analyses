@@ -3,8 +3,32 @@ import plotly.express as px
 import fastf1
 import fastf1.plotting
 import streamlit as st
+import os
+import getpass
+import sys
+import subprocess
 
+os.environ['F1_USERNAME'] = input('F1 account email: ')
+os.environ['F1_PASSWORD'] = getpass.getpass('F1 account password: ')
 
+print('Credentials Configured')
+
+result = subprocess.run(
+    [
+        sys.executable,
+        '-m',
+        'fastf1',
+        'auth',
+        'f1tv',
+        '--authenticate'
+    ],
+    capture_output=True,
+    text=True
+)
+
+print('Return code:', result.returncode)
+print(result.stdout)
+print(result.stderr)
 
 race = fastf1.get_session(2026, 'United States Grand Prix', 'R')
 race.load()
