@@ -8,34 +8,12 @@ import getpass
 import sys
 import subprocess
 
-os.environ['F1_USERNAME'] = input('F1 account email: ')
-os.environ['F1_PASSWORD'] = getpass.getpass('F1 account password: ')
-
-print('Credentials Configured')
-
-result = subprocess.run(
-    [
-        sys.executable,
-        '-m',
-        'fastf1',
-        'auth',
-        'f1tv',
-        '--authenticate'
-    ],
-    capture_output=True,
-    text=True
-)
-
-print('Return code:', result.returncode)
-print(result.stdout)
-print(result.stderr)
-
 race = fastf1.get_session(2026, 'United States Grand Prix', 'R')
 race.load()
 
 fastf1.plotting.setup_mpl(color_scheme='fastf1')
 
-driver_colors = fastf1.plotting.get_driver_colors(session=race)
+driver_colors = fastf1.plotting.get_driver_color_mapping(session=race)
 compound_colors = fastf1.plotting.get_compound_mapping(session=race)
 
 top_5 = race.results.sort_values('Position').head(5)['Abbreviation'].tolist()
