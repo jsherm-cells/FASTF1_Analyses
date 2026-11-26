@@ -127,6 +127,7 @@ q26 = fastf1.get_session(2026, 'Las Vegas', 'Q')
 q26.load()
 
 q1, q2, q3 = q26.laps.split_qualifying_sessions()
+driver_colors_26 = fastf1.plotting.get_driver_color_mapping(session=q26)
 
 top_10 = ['ANT', 'VER', 'RUS', 'NOR', 'HAD', 'LIN', 'PIA', 'LAW', 'GAS', 'COL']
 
@@ -169,7 +170,7 @@ scat26 = px.scatter(
     x='Speed_ms',
     y='Longitudinal_Acceleration_g',
     color='top_10',
-    color_discrete_map=driver_colors,
+    color_discrete_map=driver_colors_26,
     template='plotly_dark',
     title='Longitudinal Acceleration vs Speed (m/s) - 2026 Las Vegas GP',
     labels={'Speed_ms': 'Speed (m/s)', 'Longitudinal_Acceleration_g': 'Longitudinal Acceleration (g)'},
@@ -183,7 +184,7 @@ speed26 = px.line(
     x='Distance',
     y='Speed',
     color='top_10',
-    color_discrete_map=driver_colors,
+    color_discrete_map=driver_colors_26,
     template='plotly_dark',
     title='Speed vs Distance (m) - 2026 Las Vegas GP',
     labels={'Distance': 'Distance (m)', 'Speed_ms': 'Speed (m/s)'}
@@ -194,7 +195,7 @@ throttle26 = px.line(
     x='Distance',
     y='Throttle',
     color='top_10',
-    color_discrete_map=driver_colors,
+    color_discrete_map=driver_colors_26,
     template='plotly_dark',
     title='Throttle vs Distance (m) - 2026 Las Vegas GP',
     labels={'Distance': 'Distance (m)', 'Throttle': 'Throttle'},
@@ -204,8 +205,9 @@ accel26 = px.line(
     x='Distance',
     y='Longitudinal_Acceleration_g',
     color='top_10',
+    color_discrete_map=driver_colors_26,
     template='plotly_dark',
-    title='Longitudinal Acceleration vs Distance (m) - 2025 Las Vegas GP',
+    title='Longitudinal Acceleration vs Distance (m) - 2026 Las Vegas GP',
     labels={'Distance': 'Distance (m)', 'Longitudinal_Acceleration_g': 'Longitudinal Acceleration (g)'},
 )
 
@@ -214,8 +216,9 @@ rpm26 = px.line(
     x='Distance',
     y='RPM',
     color='top_10',
+    color_discrete_map=driver_colors_26,
     template='plotly_dark',
-    title='RPM vs Distance (m) - 2025 Las Vegas GP',
+    title='RPM vs Distance (m) - 2026 Las Vegas GP',
     labels={'Distance': 'Distance (m)', 'RPM': 'RPM'}
 )
 
@@ -224,9 +227,9 @@ nGear26 = px.line(
     x='Distance',
     y='nGear',
     color='top_10',
-    color_discrete_map=driver_colors,
+    color_discrete_map=driver_colors_26,
     template='plotly_dark',
-    title='Gear vs Distance (m) - 2025 Las Vegas GP',
+    title='Gear vs Distance (m) - 2026 Las Vegas GP',
     labels={'Distance': 'Distance (m)', 'nGear': 'Gear'}
 )
 
@@ -244,21 +247,21 @@ with col2:
 
 col3, col4 = st.columns([5,5])
 with col3:
-    st.plotly_chart(speed26, width='stretch')
+    st.plotly_chart(accel26, width='stretch')
 with col4: 
-    st.plotly_chart(speed25, width='stretch')
+    st.plotly_chart(accel25, width='stretch')
 
 col5, col6 = st.columns([5,5])
 with col5:
-    st.plotly_chart(throttle26, width='stretch')
+    st.plotly_chart(speed26, width='stretch')
 with col6: 
-    st.plotly_chart(throttle25, width='stretch')
+    st.plotly_chart(speed25, width='stretch')
 
 col7, col8 = st.columns([5,5])
 with col7:
-    st.plotly_chart(accel26, width='stretch')
+    st.plotly_chart(throttle26, width='stretch')
 with col8: 
-    st.plotly_chart(accel25, width='stretch')
+    st.plotly_chart(throttle25, width='stretch')
 
 col9, col10 = st.columns([5,5])
 with col9:
@@ -271,3 +274,4 @@ with col11:
     st.plotly_chart(nGear26, width='stretch')
 with col12: 
     st.plotly_chart(nGear25, width='stretch')
+
