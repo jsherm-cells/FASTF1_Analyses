@@ -9,7 +9,8 @@ Personal project I am pursuing to increase my knowledge of python and data analy
 | [USA Grand Prix Analysis](USA_GP_2026/) | What performance factors separated the top 5 finishers? | Coming Soon |
 | [Mexico Gran Prix Battle Analysis](MEXICO26_FERRARI_BATTLE/) | Who deserved to win this battle? Was it worth it or did it ruin the Ferrari's race? | Coming Soon |
 | [Free Practice One Rookie Analysis](ROOKIES_BRASIL_26/) | How did the rookies fare against the fastest in FP1? | Coming Soon |
-| [Las Vegas Strip Straight Super Clipping Analysis](LV_SC_COMP_in_progress/) | How was super clipping affected car performance on the Las Vegas Strip Straight? | N/A |
+| [Las Vegas Strip Straight Super Clipping Analysis](LV_SC_COMP_in_progress/) | How was super clipping affected car performance on the Las Vegas Strip Straight? | Coming Soon |
+| [Brazil Top Ten Prediction](BRAZIL_26_PRED/) | Using HistGradientBoostingClassifier to predict the top ten finishers of the 2026b Brazilian Gran Prix | N/A |
 
 ## Run it locally
 
